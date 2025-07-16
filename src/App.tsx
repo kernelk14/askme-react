@@ -27,9 +27,10 @@ export default function App() {
       <br />
       <div className="flex flex-col text-center items-center">
         <form className="form flex flex-col">
-          <input type="text" placeholder="Enter Username" value={name} onChange={(e) => setName(e.target.value)} />
-          <textarea placeholder="Enter Something Here." value={question} onChange={(e) => setQuestion(e.target.value)}></textarea>
-          <button type="button" onClick={handler}>Ask Question</button>
+          <input type="text" className="p-2 mb-2 border-2 rounded-md" placeholder="Enter Username" value={name} onChange={(e) => setName(e.target.value)} />
+
+          <textarea className="p-2 border-2 rounded-md" placeholder="Enter Something Here." value={question} onChange={(e) => setQuestion(e.target.value)}></textarea>
+          <button type="button" className="mt-2 border-2 rounded-xl hover:bg-[#00aaaf80]" onClick={handler}>Ask Question</button>
         </form>
       </div>
       <br />
